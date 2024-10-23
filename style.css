@@ -1,0 +1,119 @@
+/* style.css */
+body { 
+	display: flex; 
+	flex-direction: column; 
+	justify-content: center; 
+	background-color: rgb(0, 0, 0);
+	align-items: center; 
+	min-height: 50vh; 
+	padding: 0 20px;
+} 
+
+.root { 
+	font-size: x-large; 
+	color: whitesmoke; 
+	background-image: url('https://freedesignfile.com/upload/2018/01/Dark-color-wooden-board-background-vector-01.jpg'); 
+	box-shadow: 2px 5px 7px rgb(85, 66, 66); 
+	padding: 0% 5% 1% 5%; 
+    margin-top: 60px;
+	text-align: center; 
+	border-radius: 5px ; 
+	width: 100%;
+	max-width: 600px;
+} 
+#output {
+	color: rgb(212, 255, 0);
+}
+
+.title { 
+	font-family: "Dancing Script", cursive;
+	color: antiquewhite; 
+} 
+
+input { 
+	font-size: 20px; 
+	padding-left: 10px; 
+	outline: 2px grey;
+    height: 50px; 
+	width: 100%;
+	box-sizing: border-box;
+} 
+
+.foot { 
+	margin-bottom: 0%; 
+	display: flex; 
+	width: 100%; 
+} 
+
+.foot>button { 
+	width: 48%; 
+	padding: 10px; 
+	margin: 1%; 
+	background-color: rgba(185, 34, 34, 0.889); 
+	border-radius: 5px; 
+	border: none;
+	font-size: large;
+	color: bisque; 
+	font-weight: 600;
+}
+.foot>button:hover {
+    background-color: rgb(138, 75, 75);
+    color: white;
+}
+
+#scrambleWord {
+	color: burlywood;
+	letter-spacing: 7px;
+}
+#timer {
+	margin: 10px;
+	color: white;
+}
+
+.butterfly {
+	z-index: 1000;
+	margin-top: -100px;
+	margin-left: 460px;
+	width: 50px;
+}
+
+@media screen and (max-width: 768px) {
+	.root {
+		margin-top: 20px;
+		padding: 10px;
+	}
+
+	.foot>button {
+		font-size: medium;
+		margin: 5px 0;
+	}
+	.foot{
+		display: block;
+	}
+
+	.butterfly {
+		margin-left: 0;
+		margin-top: -50px;
+	}
+
+	input {
+		height: 40px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.root {
+		font-size: large;
+	}
+	.foot{
+		align-items: center;
+		font-size: small;
+		width: 100%;
+	}
+	
+
+	.butterfly {
+		width: 40px;
+		margin-top: -30px;
+	}
+}

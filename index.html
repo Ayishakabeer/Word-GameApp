@@ -1,0 +1,50 @@
+<!--index.html-->
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+	<meta charset="UTF-8" /> 
+	<meta name="viewport"
+		content="width=device-width, 
+				initial-scale=1.0" /> 
+	<title>word scramble</title> 
+	<link href="style.css" rel="stylesheet" />
+	 <!--google font  -->
+	 <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head> 
+
+<body> 
+	<div class="root "> 
+		<h1 class="title">Spelling World Scrample</h1> 
+			<div class="butterfly">
+				<img src="./img/1546709753_butterfly_064-removebg-preview.png" width="50px" alt="">
+			</div>
+			<div id="scrambled"> 
+				<h2 id="scrambleWord">Word</h2> 
+				<p id="hint"></p> 
+			</div> 
+			
+		<div id="form"> 
+			<input id="input"
+				type="text"
+				placeholder="Guess correct word" /> 
+		</div> 
+		<p id="output">Result</p> 
+		<div id="timer">20</div>
+		<div class="foot"> 
+			<button class="fnbutton" type="button"
+					onclick="check()"> 
+				Check 
+			</button> 
+			<button class="fnbutton" id="refreshButton" type="button"
+					onclick="refresh() , resetTimer()"> 
+				Refresh 
+			</button> 
+		</div> 
+		<script src="script.js"></script> 
+	</div> 
+</body> 
+
+</html>

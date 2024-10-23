@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer Example</title>
+    <style>
+        #timer {
+            font-size: 2em;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Countdown Timer</h1>
+    <div id="timer">20</div>
+
+    <script>
+        // Set the countdown time in seconds
+        let timeLeft = 20;
+
+        // Function to update the timer display
+        function updateTimer() {
+            document.getElementById('timer').innerText = timeLeft;
+            if (timeLeft <= 0) {
+                clearInterval(timerInterval);
+                refreshPage();
+            }
+            timeLeft--;
+        }
+
+        // Function to refresh the page
+        function refreshPage() {
+            location.reload();
+        }
+
+        // Update the timer every second
+        const timerInterval = setInterval(updateTimer, 1000);
+    </script>
+</body>
+</html>
